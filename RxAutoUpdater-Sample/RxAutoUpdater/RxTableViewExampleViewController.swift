@@ -18,7 +18,7 @@ class RxTableViewExampleViewController: UIViewController {
     
     var disposeBag: DisposeBag = DisposeBag()
     
-    var items = TableItem<String>(["Lee Sun-Hyoup", "kciter", "RxSwift", "Reactive"])
+    var items: TableItem<String> = ["Lee Sun-Hyoup", "kciter", "RxSwift", "Reactive"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

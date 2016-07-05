@@ -16,11 +16,11 @@ class RxCollectionViewExampleViewController: UIViewController {
     @IBOutlet var removeButton: UIButton!
     @IBOutlet var collectionView: UICollectionView!
     
-    var items = CollectionItem<UIColor>([UIColor.blackColor(),
-                                         UIColor.yellowColor(),
-                                         UIColor.redColor(),
-                                         UIColor.greenColor(),
-                                         UIColor.brownColor()])
+    var items: CollectionItem<UIColor> = [UIColor.blackColor(),
+                                          UIColor.yellowColor(),
+                                          UIColor.redColor(),
+                                          UIColor.greenColor(),
+                                          UIColor.brownColor()]
     
     var disposeBag = DisposeBag()
 
