@@ -58,7 +58,7 @@ public class VariableArray<Element>: ArrayLiteralConvertible {
 }
 
 // Append Extension
-extension VariableArray {
+public extension VariableArray {
     public func append(element: Element) {
         self.elements.append(element)
         rx_changeEvent.on(.Next(
@@ -95,7 +95,7 @@ extension VariableArray {
 }
 
 // Remove Extension
-extension VariableArray {
+public extension VariableArray {
     public func removeAll(keepCapacity: Bool = false) {
         let tempElements = self.elements
         self.elements.removeAll(keepCapacity: keepCapacity)
@@ -225,13 +225,13 @@ extension VariableArray: CollectionType {
 }
 
 extension VariableArray: CustomDebugStringConvertible {
-    public var description: String {
-        return elements.description
+    public var debugDescription: String {
+        return elements.debugDescription
     }
 }
 
 extension VariableArray: CustomStringConvertible {
-    public var debugDescription: String {
-        return elements.debugDescription
+    public var description: String {
+        return elements.description
     }
 }

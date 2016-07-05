@@ -2,8 +2,8 @@
 //  RxCollectionViewExampleViewController.swift
 //  Parking
 //
-//  Created by LeeSunhyoup on 2016. 5. 18..
-//  Copyright © 2016년 lee sang gyu. All rights reserved.
+//  Created by LeeSunhyoup on 2016. 5. 24..
+//  Copyright © 2016년 Lee Sun-Hyoup. All rights reserved.
 //
 
 import UIKit
@@ -34,20 +34,6 @@ class RxCollectionViewExampleViewController: UIViewController {
             cell.backgroundColor = item
         }.addDisposableTo(disposeBag)
         
-        collectionView.rx_modelSelected(UIColor)
-            .subscribeNext { color in
-                print(color.description)
-            }.addDisposableTo(disposeBag)
-
-        collectionView
-            .rx_itemSelected
-            .subscribeNext { indexPath in
-                self.items[indexPath.row] = UIColor(red: CGFloat(random()%255)/255.0,
-                                                    green: CGFloat(random()%255)/255.0,
-                                                    blue: CGFloat(random()%255)/255.0,
-                                                    alpha: 1)
-            }.addDisposableTo(disposeBag)
-        
         addButton.rx_tap
             .subscribeNext {
                 self.items.append(
@@ -63,6 +49,14 @@ class RxCollectionViewExampleViewController: UIViewController {
         removeButton.rx_tap
             .subscribeNext {
                 self.items.removeFirst()
+            }.addDisposableTo(disposeBag)
+        
+        collectionView.rx_itemSelected
+            .subscribeNext { indexPath in
+                self.items[indexPath.row] = UIColor(red: CGFloat(random()%255)/255.0,
+                    green: CGFloat(random()%255)/255.0,
+                    blue: CGFloat(random()%255)/255.0,
+                    alpha: 1)
             }.addDisposableTo(disposeBag)
     }
 }

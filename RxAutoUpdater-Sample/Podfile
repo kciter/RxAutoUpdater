@@ -1,9 +1,9 @@
 # Uncomment this line to define a global platform for your project
 platform :ios, '8.0'
 
-target 'RxAutoUpdater' do
+target 'RxAutoUpdater-Sample' do
 	use_frameworks!
 
-	pod 'RxSwift'
-	pod 'RxCocoa'
+	pod 'RxSwift', '~> 2.5'
+	pod 'RxCocoa', '~> 2.5'
 end

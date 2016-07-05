@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uRs-Cd-Bop">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uRs-Cd-Bop">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--RxAutoUpdater-Sample-->
         <scene sceneID="kGF-Lk-zNT">
             <objects>
                 <viewController storyboardIdentifier="RxExampleViewController" id="Ui4-bo-XiD" customClass="ViewController" customModule="RxAutoUpdater" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70B-Tt-2tu">
-                                <rect key="frame" x="10" y="30" width="132" height="30"/>
+                                <rect key="frame" x="10" y="74" width="132" height="30"/>
                                 <state key="normal" title="TableView Example"/>
                                 <connections>
                                     <segue destination="5kJ-fk-b1F" kind="show" id="6uo-98-5c1">
@@ -27,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn6-kg-7VH">
-                                <rect key="frame" x="10" y="70" width="163" height="30"/>
+                                <rect key="frame" x="10" y="114" width="163" height="30"/>
                                 <state key="normal" title="CollectionView Example"/>
                                 <connections>
                                     <segue destination="CvI-TS-mkS" kind="show" id="MM4-3c-buW">
@@ -44,14 +43,14 @@
                             <constraint firstItem="tn6-kg-7VH" firstAttribute="leading" secondItem="age-9G-PGY" secondAttribute="leading" constant="10" id="ySM-7b-XE1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="i34-fX-DgI"/>
+                    <navigationItem key="navigationItem" title="RxAutoUpdater-Sample" id="i34-fX-DgI"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4WI-mx-nMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1709.5" y="313.5"/>
         </scene>
-        <!--Rx Table View Example Controller-->
+        <!--TableView Example-->
         <scene sceneID="I68-2r-Wpl">
             <objects>
                 <viewController id="5kJ-fk-b1F" customClass="RxTableViewExampleController" customModule="RxAutoUpdater" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,13 +76,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYp-6v-5Ku">
-                                <rect key="frame" x="10" y="30" width="30" height="30"/>
-                                <state key="normal" title="추가"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYp-6v-5Ku">
+                                <rect key="frame" x="10" y="74" width="40" height="30"/>
+                                <state key="normal" title="Insert"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrW-St-bWa">
-                                <rect key="frame" x="50" y="30" width="30" height="30"/>
-                                <state key="normal" title="삭제"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrW-St-bWa">
+                                <rect key="frame" x="60" y="74" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,6 +97,7 @@
                             <constraint firstItem="DrW-St-bWa" firstAttribute="leading" secondItem="QYp-6v-5Ku" secondAttribute="trailing" constant="10" id="kPg-Zd-i8P"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="TableView Example" id="sjv-oW-z9x"/>
                     <connections>
                         <outlet property="addButton" destination="QYp-6v-5Ku" id="duk-cc-qBC"/>
                         <outlet property="removeButton" destination="DrW-St-bWa" id="o5d-4s-E10"/>
@@ -108,7 +108,7 @@
             </objects>
             <point key="canvasLocation" x="2206.5" y="-88.5"/>
         </scene>
-        <!--Rx Collection View Example View Controller-->
+        <!--CollectionView Example-->
         <scene sceneID="UgM-AZ-RSc">
             <objects>
                 <viewController id="CvI-TS-mkS" customClass="RxCollectionViewExampleViewController" customModule="RxAutoUpdater" customModuleProvider="target" sceneMemberID="viewController">
@@ -121,15 +121,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQ2-gr-NhM">
-                                <rect key="frame" x="10" y="30" width="30" height="30"/>
-                                <state key="normal" title="추가"/>
+                                <rect key="frame" x="10" y="74" width="40" height="30"/>
+                                <state key="normal" title="Insert"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gD-xb-xUm">
-                                <rect key="frame" x="50" y="30" width="30" height="30"/>
-                                <state key="normal" title="삭제"/>
+                                <rect key="frame" x="60" y="74" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dGe-Cv-6iO">
-                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ho1-Ux-aQT">
                                     <size key="itemSize" width="50" height="50"/>
@@ -138,7 +138,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="zgB-eo-Kzk" customClass="CollectionViewCell" customModule="RxAutoUpdater" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="zgB-eo-Kzk">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -162,6 +162,7 @@
                             <constraint firstAttribute="trailing" secondItem="dGe-Cv-6iO" secondAttribute="trailing" id="sM1-3B-pBw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="CollectionView Example" id="RV2-Ba-XAZ"/>
                     <connections>
                         <outlet property="addButton" destination="oQ2-gr-NhM" id="J7l-7F-4K1"/>
                         <outlet property="collectionView" destination="dGe-Cv-6iO" id="RZZ-yt-8Eu"/>

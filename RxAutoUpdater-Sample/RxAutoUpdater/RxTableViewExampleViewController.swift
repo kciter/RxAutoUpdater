@@ -1,16 +1,16 @@
 //
-//  RxTableViewExampleController.swift
+//  RxTableViewExampleViewController.swift
 //  Parking
 //
-//  Created by LeeSunhyoup on 2016. 5. 18..
-//  Copyright © 2016년 lee sang gyu. All rights reserved.
+//  Created by LeeSunhyoup on 2016. 5. 24..
+//  Copyright © 2016년 Lee Sun-Hyoup. All rights reserved.
 //
 
 import UIKit
 import RxSwift
 import RxCocoa
 
-class RxTableViewExampleController: UIViewController {
+class RxTableViewExampleViewController: UIViewController {
     
     @IBOutlet var addButton: UIButton!
     @IBOutlet var removeButton: UIButton!
