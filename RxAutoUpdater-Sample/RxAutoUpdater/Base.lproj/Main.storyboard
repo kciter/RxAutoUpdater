@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uRs-Cd-Bop">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--RxAutoUpdater-Sample-->
         <scene sceneID="kGF-Lk-zNT">
             <objects>
-                <viewController storyboardIdentifier="RxExampleViewController" id="Ui4-bo-XiD" customClass="ViewController" customModule="RxAutoUpdater" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RxExampleViewController" id="Ui4-bo-XiD" customClass="ViewController" customModule="RxAutoUpdater_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nsa-0X-ZPe"/>
                         <viewControllerLayoutGuide type="bottom" id="436-nU-Xyr"/>
@@ -53,7 +54,7 @@
         <!--TableView Example-->
         <scene sceneID="I68-2r-Wpl">
             <objects>
-                <viewController id="5kJ-fk-b1F" customClass="RxTableViewExampleController" customModule="RxAutoUpdater" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5kJ-fk-b1F" customClass="RxTableViewExampleViewController" customModule="RxAutoUpdater_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x7p-Wa-x0k"/>
                         <viewControllerLayoutGuide type="bottom" id="WBf-X1-7v9"/>
@@ -111,7 +112,7 @@
         <!--CollectionView Example-->
         <scene sceneID="UgM-AZ-RSc">
             <objects>
-                <viewController id="CvI-TS-mkS" customClass="RxCollectionViewExampleViewController" customModule="RxAutoUpdater" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CvI-TS-mkS" customClass="RxCollectionViewExampleViewController" customModule="RxAutoUpdater_Sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MEz-tQ-T4y"/>
                         <viewControllerLayoutGuide type="bottom" id="4RS-i0-Wfo"/>

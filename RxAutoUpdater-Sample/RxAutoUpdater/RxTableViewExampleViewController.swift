@@ -8,7 +8,7 @@
 
 import UIKit
 import RxSwift
-import RxCocoa
+import RxAutoUpdater
 
 class RxTableViewExampleViewController: UIViewController {
     
@@ -26,8 +26,8 @@ class RxTableViewExampleViewController: UIViewController {
     }
     
     func bindToRx() {
-        let animationTypes = RxTableViewAnimationType(insertAnimation: .Left, deleteAnimation: .Right, reloadAnimation: .None)
-        tableView.rx_autoUpdate(items, animationTypes: animationTypes, identifier: "Cell") { index, cell, item in
+//        let animationTypes = RxTableViewAnimationType(insertAnimation: .Left, deleteAnimation: .Right, reloadAnimation: .None)
+        tableView.rx_autoUpdate(items, identifier: "Cell") { index, cell, item in
             cell.textLabel?.text = item
         }.addDisposableTo(disposeBag)
         

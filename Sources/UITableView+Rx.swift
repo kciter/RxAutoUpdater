@@ -19,11 +19,11 @@ extension UITableView {
 }
 
 public struct RxTableViewAnimationType {
-    var insertAnimation: UITableViewRowAnimation
-    var deleteAnimation: UITableViewRowAnimation
-    var reloadAnimation: UITableViewRowAnimation
+    public var insertAnimation: UITableViewRowAnimation
+    public var deleteAnimation: UITableViewRowAnimation
+    public var reloadAnimation: UITableViewRowAnimation
     
-    init(insertAnimation: UITableViewRowAnimation = .Automatic,
+    public init(insertAnimation: UITableViewRowAnimation = .Automatic,
          deleteAnimation: UITableViewRowAnimation = .Automatic,
          reloadAnimation: UITableViewRowAnimation = .Automatic) {
         self.insertAnimation = insertAnimation

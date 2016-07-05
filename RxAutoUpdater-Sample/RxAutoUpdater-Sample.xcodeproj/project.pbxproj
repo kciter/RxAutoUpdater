@@ -15,15 +15,6 @@
 		B6A2AC461CF4238B00E20178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A2AC441CF4238B00E20178 /* Main.storyboard */; };
 		B6A2AC481CF4238B00E20178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A2AC471CF4238B00E20178 /* Assets.xcassets */; };
 		B6A2AC4B1CF4238B00E20178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A2AC491CF4238B00E20178 /* LaunchScreen.storyboard */; };
-		B6C172E31D2B9AEE00E5107F /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172E01D2B9AEE00E5107F /* CollectionItem.swift */; };
-		B6C172E41D2B9AEE00E5107F /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172E11D2B9AEE00E5107F /* TableItem.swift */; };
-		B6C172E51D2B9AEE00E5107F /* VariableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172E21D2B9AEE00E5107F /* VariableArray.swift */; };
-		B6C172E91D2B9AF800E5107F /* UICollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172E61D2B9AF800E5107F /* UICollectionView+Rx.swift */; };
-		B6C172EA1D2B9AF800E5107F /* RxCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172E71D2B9AF800E5107F /* RxCollectionViewDataSource.swift */; };
-		B6C172EB1D2B9AF800E5107F /* RxCollectionViewSingleSectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172E81D2B9AF800E5107F /* RxCollectionViewSingleSectionDataSource.swift */; };
-		B6C172EF1D2B9AFD00E5107F /* RxTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172EC1D2B9AFD00E5107F /* RxTableViewDataSource.swift */; };
-		B6C172F01D2B9AFD00E5107F /* RxTableViewSingleSectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172ED1D2B9AFD00E5107F /* RxTableViewSingleSectionDataSource.swift */; };
-		B6C172F11D2B9AFD00E5107F /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C172EE1D2B9AFD00E5107F /* UITableView+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,15 +31,6 @@
 		B6A2AC471CF4238B00E20178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6A2AC4A1CF4238B00E20178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6A2AC4C1CF4238B00E20178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6C172E01D2B9AEE00E5107F /* CollectionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionItem.swift; path = ../../Sources/CollectionItem.swift; sourceTree = "<group>"; };
-		B6C172E11D2B9AEE00E5107F /* TableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableItem.swift; path = ../../Sources/TableItem.swift; sourceTree = "<group>"; };
-		B6C172E21D2B9AEE00E5107F /* VariableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VariableArray.swift; path = ../../Sources/VariableArray.swift; sourceTree = "<group>"; };
-		B6C172E61D2B9AF800E5107F /* UICollectionView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Rx.swift"; path = "../../Sources/UICollectionView+Rx.swift"; sourceTree = "<group>"; };
-		B6C172E71D2B9AF800E5107F /* RxCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSource.swift; path = ../../Sources/RxCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		B6C172E81D2B9AF800E5107F /* RxCollectionViewSingleSectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxCollectionViewSingleSectionDataSource.swift; path = ../../Sources/RxCollectionViewSingleSectionDataSource.swift; sourceTree = "<group>"; };
-		B6C172EC1D2B9AFD00E5107F /* RxTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxTableViewDataSource.swift; path = ../../Sources/RxTableViewDataSource.swift; sourceTree = "<group>"; };
-		B6C172ED1D2B9AFD00E5107F /* RxTableViewSingleSectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxTableViewSingleSectionDataSource.swift; path = ../../Sources/RxTableViewSingleSectionDataSource.swift; sourceTree = "<group>"; };
-		B6C172EE1D2B9AFD00E5107F /* UITableView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Rx.swift"; path = "../../Sources/UITableView+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,38 +54,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B66D74511CFE8BFD00303B43 /* RxAutoUpdater */ = {
-			isa = PBXGroup;
-			children = (
-				B6C172E01D2B9AEE00E5107F /* CollectionItem.swift */,
-				B6C172E11D2B9AEE00E5107F /* TableItem.swift */,
-				B6C172E21D2B9AEE00E5107F /* VariableArray.swift */,
-				B66D74541CFE8C2200303B43 /* RxCollectionView */,
-				B66D74531CFE8C1C00303B43 /* RxTableView */,
-			);
-			name = RxAutoUpdater;
-			sourceTree = "<group>";
-		};
-		B66D74531CFE8C1C00303B43 /* RxTableView */ = {
-			isa = PBXGroup;
-			children = (
-				B6C172EE1D2B9AFD00E5107F /* UITableView+Rx.swift */,
-				B6C172EC1D2B9AFD00E5107F /* RxTableViewDataSource.swift */,
-				B6C172ED1D2B9AFD00E5107F /* RxTableViewSingleSectionDataSource.swift */,
-			);
-			name = RxTableView;
-			sourceTree = "<group>";
-		};
-		B66D74541CFE8C2200303B43 /* RxCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				B6C172E61D2B9AF800E5107F /* UICollectionView+Rx.swift */,
-				B6C172E71D2B9AF800E5107F /* RxCollectionViewDataSource.swift */,
-				B6C172E81D2B9AF800E5107F /* RxCollectionViewSingleSectionDataSource.swift */,
-			);
-			name = RxCollectionView;
-			sourceTree = "<group>";
-		};
 		B6A2AC341CF4238A00E20178 = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +75,6 @@
 		B6A2AC3F1CF4238A00E20178 /* RxAutoUpdater-Sample */ = {
 			isa = PBXGroup;
 			children = (
-				B66D74511CFE8BFD00303B43 /* RxAutoUpdater */,
 				B6A2AC401CF4238A00E20178 /* AppDelegate.swift */,
 				B66D743B1CFE8BD900303B43 /* RxCollectionViewExampleViewController.swift */,
 				B66D74391CFE8BD200303B43 /* RxTableViewExampleViewController.swift */,
@@ -270,19 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C172F11D2B9AFD00E5107F /* UITableView+Rx.swift in Sources */,
-				B6C172E51D2B9AEE00E5107F /* VariableArray.swift in Sources */,
-				B6C172EB1D2B9AF800E5107F /* RxCollectionViewSingleSectionDataSource.swift in Sources */,
-				B6C172F01D2B9AFD00E5107F /* RxTableViewSingleSectionDataSource.swift in Sources */,
-				B6C172E31D2B9AEE00E5107F /* CollectionItem.swift in Sources */,
-				B6C172E91D2B9AF800E5107F /* UICollectionView+Rx.swift in Sources */,
-				B6C172E41D2B9AEE00E5107F /* TableItem.swift in Sources */,
 				B66D743A1CFE8BD200303B43 /* RxTableViewExampleViewController.swift in Sources */,
 				B6A2AC431CF4238B00E20178 /* ViewController.swift in Sources */,
-				B6C172EF1D2B9AFD00E5107F /* RxTableViewDataSource.swift in Sources */,
 				B66D743C1CFE8BD900303B43 /* RxCollectionViewExampleViewController.swift in Sources */,
 				B6A2AC411CF4238A00E20178 /* AppDelegate.swift in Sources */,
-				B6C172EA1D2B9AF800E5107F /* RxCollectionViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

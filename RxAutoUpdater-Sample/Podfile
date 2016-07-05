@@ -4,6 +4,5 @@ platform :ios, '8.0'
 target 'RxAutoUpdater-Sample' do
 	use_frameworks!
 
-	pod 'RxSwift', '~> 2.5'
-	pod 'RxCocoa', '~> 2.5'
+	pod 'RxAutoUpdater'
 end
