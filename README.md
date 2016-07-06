@@ -6,6 +6,8 @@
 
 Auto update to data for UITableView/UICollectionView
 
+:warning: **RxAutoUpdater can't respond to the cells in various shapes or multiple section yet.** It is [ToDo](#todo).
+
 ## Preview
 ```
 $ pod try RxAutoUpdater
