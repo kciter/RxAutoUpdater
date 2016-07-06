@@ -57,7 +57,7 @@ tableView.rx_itemSelected
 * **CocoaPods**
   ```ruby
   use_frameworks!
-  pod "GlitchLabel"
+  pod "RxAutoUpdater"
   ```
   
 * **Manually**
