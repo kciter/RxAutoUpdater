@@ -91,6 +91,10 @@ collectionView.rx_autoUpdate(items, identifier: "Cell") { index, cell, item in
 }.addDisposableTo(disposeBag)
 ```
 
+## ToDo
+* [ ] Multiple Section
+* [ ] DataSource Customize
+
 ## License
 The MIT License (MIT)
 
