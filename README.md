@@ -17,6 +17,11 @@ $ pod try RxAutoUpdater
   </tr>
   <tr>
     <td><pre>
+var items: TableItem<String> = ["Lee Sun-Hyoup",
+                        "kciter",
+                        "RxSwift",
+                        "Reactive"]
+                        
 tableView.rx_autoUpdate(items, 
                         animationTypes: animationTypes, 
                         identifier: "Cell") { index, cell, item in
