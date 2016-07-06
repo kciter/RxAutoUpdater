@@ -61,7 +61,7 @@ tableView.rx_itemSelected
   ```
   
 * **Manually**
-  To install manually the GlitchLabel in an app, just drag the `Sources/*.swift` file into your project.
+  To install manually the RxAutoUpdator in an app, just drag the `Sources/*.swift` file into your project.
 
 ## Simple Usage
 
